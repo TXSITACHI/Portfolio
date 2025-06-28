@@ -36,8 +36,8 @@ export default function ProfilePhotoManager({ onPhotoChange }: ProfilePhotoManag
   // Admin mode toggle with secret key combination
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {
-      // Secret combination: Ctrl + Shift + A
-      if (e.ctrlKey && e.shiftKey && e.key === "A") {
+      // Secret combination: Ctrl + Shift + X
+      if (e.ctrlKey && e.shiftKey && e.key === "X") {
         e.preventDefault()
         const newAdminMode = !isAdminMode
         setIsAdminMode(newAdminMode)
