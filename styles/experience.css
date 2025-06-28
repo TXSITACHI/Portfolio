@@ -1,0 +1,132 @@
+/* Experience Section Styles */
+.experience-section {
+  position: relative;
+  padding: 5rem 0;
+  z-index: 10;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experience-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.15);
+  transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 40px rgba(124, 58, 237, 0.25);
+}
+
+.experience-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .experience-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.experience-info {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .experience-info {
+    margin-bottom: 0;
+  }
+}
+
+.experience-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.experience-company {
+  font-size: 1.125rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #22d3ee, #3b82f6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.experience-period {
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .experience-period {
+    margin-top: 0;
+  }
+}
+
+.period-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+.experience-description {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.achievements {
+  /* Container styles */
+}
+
+.achievements-title {
+  color: #ffffff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.achievements-icon {
+  width: 1rem;
+  height: 1rem;
+  color: #a855f7;
+  margin-right: 0.5rem;
+}
+
+.achievements-list {
+  list-style: none;
+  padding: 0;
+}
+
+.achievement-item {
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.achievement-star {
+  width: 0.75rem;
+  height: 0.75rem;
+  color: #fbbf24;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+}

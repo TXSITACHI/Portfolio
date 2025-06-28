@@ -1,0 +1,25 @@
+/* Footer Styles */
+.footer {
+  position: relative;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 10;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.footer-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 0 1rem;
+  }
+}

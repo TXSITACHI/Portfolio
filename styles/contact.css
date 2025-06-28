@@ -1,0 +1,115 @@
+/* Contact Section Styles */
+.contact-section {
+  position: relative;
+  padding: 5rem 0;
+  z-index: 10;
+}
+
+.contact-container {
+  max-width: 64rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.contact-description {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 3rem;
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+.contact-cards {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .contact-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+}
+
+.email-card {
+  box-shadow: 0 10px 30px rgba(6, 182, 212, 0.2);
+}
+
+.email-card:hover {
+  box-shadow: 0 20px 40px rgba(6, 182, 212, 0.3);
+}
+
+.phone-card {
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.2);
+}
+
+.phone-card:hover {
+  box-shadow: 0 20px 40px rgba(124, 58, 237, 0.3);
+}
+
+.location-card {
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
+}
+
+.location-card:hover {
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
+}
+
+.contact-card-icon {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+.email-card .contact-card-icon {
+  color: #06b6d4;
+}
+
+.phone-card .contact-card-icon {
+  color: #7c3aed;
+}
+
+.location-card .contact-card-icon {
+  color: #3b82f6;
+}
+
+.contact-card-title {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contact-card-text {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-btn {
+  font-size: 1.125rem;
+  padding: 1rem 2rem;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 0 1rem;
+  }
+}
