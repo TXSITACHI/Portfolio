@@ -11,7 +11,7 @@ interface ProjectsSectionProps {
 
 export default function ProjectsSection({ projects }: ProjectsSectionProps) {
   return (
-    <section id="projects" className="projects-section">
+    <section id="projects" className="projects-section fade-in-section">
       <div className="section-container">
         <h2 className="section-title">Featured Projects</h2>
 

@@ -1,13 +1,14 @@
-/* Navigation Styles */
+/* Navigation - Glassmorphism Dark Theme */
 .navigation {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(15, 15, 30, 0.7);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 50;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
 .nav-container {
@@ -20,33 +21,112 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 1.25rem 0;
 }
 
 .nav-logo {
   font-size: 1.5rem;
-  font-weight: bold;
-  background: linear-gradient(90deg, #22d3ee, #a855f7, #3b82f6);
+  font-weight: 900;
+  background: linear-gradient(135deg, #06b6d4, #3b82f6, #0ea5e9);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
+  letter-spacing: -0.02em;
 }
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .nav-link {
   background: none;
   border: none;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 1rem;
+  font-size: 0.95rem;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
   padding: 0.5rem 0;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #06b6d4, #3b82f6);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #22d3ee;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: #22d3ee;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #22d3ee;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 100;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    left: 0;
+    top: 4rem;
+    right: 0;
+    flex-direction: column;
+    gap: 1rem;
+    background: rgba(15, 15, 30, 0.95);
+    backdrop-filter: blur(20px);
+    padding: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-container {
+    padding: 0 1rem;
+  }
+
+  .nav-link {
+    padding: 0.75rem 0;
+    font-size: 1rem;
+  }
+
+  .nav-link::after {
+    bottom: -8px;
+  }
 }
 
 .nav-link:hover {

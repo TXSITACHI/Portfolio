@@ -11,7 +11,7 @@ interface AboutSectionProps {
 
 export default function AboutSection({ contactInfo }: AboutSectionProps) {
   return (
-    <section id="about" className="about-section">
+    <section id="about" className="about-section fade-in-section">
       <div className="section-container">
         <h2 className="section-title">About Me</h2>
 
@@ -20,8 +20,12 @@ export default function AboutSection({ contactInfo }: AboutSectionProps) {
             <div className="card">
               <h3 className="card-title">Who I Am</h3>
               <p className="card-text">
-I'm a UI/UX and Frontend Developer with a strong interest in designing clean, user-friendly interfaces that solve real-world problems. I recently interned as a Web Developer at Government of Nepal, where I worked on web-based solutions and gained hands-on experience in IT operations and development within a public sector environment.
-When I'm not designing or coding, I enjoy learning about new design trends, exploring front-end tools, and connecting with the developer and design community to share ideas and grow together.
+                I'm a Full Stack Developer passionate about building clean, user-friendly, and impactful digital experiences across both web and mobile platforms. I work on frontend and backend development, creating responsive websites, scalable applications, and intuitive user interfaces that solve real-world problems.
+
+                I previously interned as a Web Developer at the Government of Nepal, where I contributed to web-based solutions and gained practical experience in IT operations and software development within the public sector.
+
+                Beyond coding and development, I enjoy exploring new technologies, staying updated with modern design and development trends, and connecting with the developer and design community to learn, share ideas, and grow together.
+
               </p>
               <p className="card-text">
                 When I'm not coding, you'll find me exploring new technologies, contributing to open source projects, or

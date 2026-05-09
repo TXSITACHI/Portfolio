@@ -11,7 +11,7 @@ interface ContactSectionProps {
 
 export default function ContactSection({ contactInfo }: ContactSectionProps) {
   return (
-    <section id="contact" className="contact-section">
+    <section id="contact" className="contact-section fade-in-section">
       <div className="contact-container">
         <h2 className="section-title">Let's Work Together</h2>
         <p className="contact-description">

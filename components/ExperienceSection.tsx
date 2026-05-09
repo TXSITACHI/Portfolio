@@ -8,7 +8,7 @@ interface ExperienceSectionProps {
 
 export default function ExperienceSection({ experience }: ExperienceSectionProps) {
   return (
-    <section id="experience" className="experience-section">
+    <section id="experience" className="experience-section fade-in-section">
       <div className="section-container">
         <h2 className="section-title">Experience</h2>
 

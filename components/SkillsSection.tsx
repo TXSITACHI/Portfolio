@@ -8,7 +8,7 @@ interface SkillsSectionProps {
 
 export default function SkillsSection({ skills }: SkillsSectionProps) {
   return (
-    <section id="skills" className="skills-section">
+    <section id="skills" className="skills-section fade-in-section">
       <div className="section-container">
         <h2 className="section-title">Tech Stack</h2>
 
