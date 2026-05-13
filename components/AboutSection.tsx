@@ -20,11 +20,8 @@ export default function AboutSection({ contactInfo }: AboutSectionProps) {
             <div className="card">
               <h3 className="card-title">Who I Am</h3>
               <p className="card-text">
-                I'm a Full Stack Developer passionate about building clean, user-friendly, and impactful digital experiences across both web and mobile platforms. I work on frontend and backend development, creating responsive websites, scalable applications, and intuitive user interfaces that solve real-world problems.
+                I'm a Full Stack Developer passionate about building clean, user-friendly web and mobile applications. I work across both frontend and backend development, creating responsive websites, scalable applications, and intuitive user experiences. I previously interned as a Web Developer at the Government of Nepal, where I gained hands-on experience in web solutions and IT operations. I also enjoy exploring new technologies, contributing to open source, and connecting with the developer community.
 
-                I previously interned as a Web Developer at the Government of Nepal, where I contributed to web-based solutions and gained practical experience in IT operations and software development within the public sector.
-
-                Beyond coding and development, I enjoy exploring new technologies, staying updated with modern design and development trends, and connecting with the developer and design community to learn, share ideas, and grow together.
 
               </p>
               <p className="card-text">

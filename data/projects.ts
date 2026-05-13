@@ -31,4 +31,11 @@ export const projects: Project[] = [
     tech: ["React","React Native", "Node.js", "CSS3","Typescript","Socket.IO","WebRTC","Expo"],
     link: "https://github.com/TXSITACHI/Health-connect.git",
   },
+ {
+    title: "Journal App",
+    description: "JournalApp is a secure desktop journaling application developed using C#.NET that helps users maintain daily digital journals with features like Markdown writing, mood tracking, tagging, analytics, calendar navigation, PIN protection, and PDF export. The application focuses on privacy, organization, and personal reflection through an intuitive and user-friendly interface.",
+    tech: ["C#",".NET MAUI Blazor Hybrid", "Razor Components", "SQLite", "HTML", "CSS", "Git", "GitHub"],
+    link: "https://github.com/TXSITACHI/JournalApp.git",
+  },
+
 ]
